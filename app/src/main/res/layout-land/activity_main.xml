@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/button01"
+        android:text="USB模式"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:textSize="30dp"/>
+    <View
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/button02"
+        android:text="串口模式"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:textSize="30dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:text="设置串口号："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"/>
+        <Spinner
+            android:id="@+id/spDwon"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:dropDownVerticalOffset="70dp"
+            android:spinnerMode="dialog"
+            android:theme="@style/SpnStyle"
+            />
+    </LinearLayout>
+</LinearLayout>
